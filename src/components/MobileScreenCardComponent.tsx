@@ -1,6 +1,14 @@
 
+interface Service {
+  img: string;
+  title: string;
+  desc: string;
+}
 
-const MobileScreenCardComponent = ({ service }) => {
+interface MobileScreenCardComponentProps {
+  service: Service;
+}
+const MobileScreenCardComponent:React.FC<MobileScreenCardComponentProps> = ({ service }) => {
   return (
     <div>
       <a href="#" className="block py-2">
