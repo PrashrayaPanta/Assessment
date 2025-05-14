@@ -151,14 +151,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium  ">
-                        Custom Software Development
-                      </h1>
-                      <p className="text-md font-light">
-                        Tailored software solutions for your needs.
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="">
+                        <h1 className="text-xl font-medium  ">
+                          Custom Software Development
+                        </h1>
+                        <p className="text-md font-light">
+                          Tailored software solutions for your needs.
+                        </p>
+                      </a>
+                    </nav>
                   </div>
                   <div className="flex items-center bg-red-500 gap-2">
                     <img
@@ -168,12 +170,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium ">Web Development</h1>
-                      <p className="text-md font-light">
-                        Websites that work on all devices
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="">
+                        <h1 className="text-xl font-medium ">
+                          Web Development
+                        </h1>
+                        <p className="text-md font-light">
+                          Websites that work on all devices
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500   gap-2">
@@ -184,14 +190,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">
-                        Mobile App Devlopment
-                      </h1>
-                      <p className="text-md font-light">
-                        App for phones and tables
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#" rel="noopener noreferrer">
+                        <h1 className="text-xl font-medium">
+                          Mobile App Devlopment
+                        </h1>
+                        <p className="text-md font-light">
+                          App for phones and tables
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500 px-2  gap-2 ">
@@ -202,14 +210,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">
-                        Cloud computing services
-                      </h1>
-                      <p className="text-md font-light">
-                        Use the internet to impove your business
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="text-xl font-medium">
+                          Cloud computing services
+                        </h1>
+                        <p className="text-md font-light">
+                          Use the internet to impove your business
+                        </p>
+                      </a>
+                    </nav>
                   </div>
                   <div className="flex items-center bg-red-500 gap-2 ">
                     <img
@@ -219,14 +229,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">
-                        Quality Aussurance and testing
-                      </h1>
-                      <p className="text-md font-light">
-                        Chceking softwares for relaibail;ity
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="text-xl font-medium">
+                          Quality Aussurance and testing
+                        </h1>
+                        <p className="text-md font-light">
+                          Chceking softwares for relaibail;ity
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500 gap-2  ">
@@ -237,12 +249,14 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">UI/UX Designing</h1>
-                      <p className="text-md font-light">
-                        Creating user friendly interfaces
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="text-xl font-medium">UI/UX Designing</h1>
+                        <p className="text-md font-light">
+                          Creating user friendly interfaces
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500 px-2 gap-2">
@@ -253,14 +267,16 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">
-                        Maintance and support
-                      </h1>
-                      <p className="text-md font-light">
-                        Keep your softwares running smoothly
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="text-xl font-medium">
+                          Maintance and support
+                        </h1>
+                        <p className="text-md font-light">
+                          Keep your softwares running smoothly
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500 gap-2 ">
@@ -271,12 +287,14 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="">Block chain solutions</h1>
-                      <p className="text-md font-light">
-                        Secure your technology for your business
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="">Block chain solutions</h1>
+                        <p className="text-md font-light">
+                          Secure your technology for your business
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   <div className="flex items-center bg-red-500 gap-2">
@@ -287,12 +305,14 @@ function App() {
                       className="w-14"
                     />
 
-                    <div>
-                      <h1 className="text-xl font-medium">Dev Ops</h1>
-                      <p className="text-md font-light">
-                        Faster and safer software delivery
-                      </p>
-                    </div>
+                    <nav>
+                      <a href="#">
+                        <h1 className="text-xl font-medium">Dev Ops</h1>
+                        <p className="text-md font-light">
+                          Faster and safer software delivery
+                        </p>
+                      </a>
+                    </nav>
                   </div>
 
                   {/* <div className="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full">
