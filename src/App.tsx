@@ -1,12 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 
-import DesktopCardComponent from "./components/DesktopCardComponent";
+import DesktopCardComponent from "./components/DesktopCardComponent.tsx";
 
-import MobileScreenCardComponent from "./components/MobileScreenCardComponent";
+import MobileScreenCardComponent from "./components/MobileScreenCardComponent.tsx";
 
-
-import Footer from "./components/Footer";
+import Footer from "./components/Footer.tsx";
 
 const services = [
   {
