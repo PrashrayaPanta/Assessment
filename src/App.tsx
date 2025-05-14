@@ -1,6 +1,58 @@
 import { useState } from "react";
 import "./App.css";
 
+import DesktopCardComponent from "./components/DesktopCardComponent";
+
+
+
+const services = [
+  {
+    title: "Custom Software Development",
+    desc: "Tailored software solutions for your needs.",
+    img: "https://metalogic.com.np/services/mainpage/computer.svg",
+  },
+  {
+    title: "Web Development",
+    desc: "Websites that work on all devices.",
+    img: "https://metalogic.com.np/services/web.svg",
+  },
+  {
+    title: "Mobile App Development",
+    desc: "Apps for phones and tablets.",
+    img: "https://metalogic.com.np/services/mobile.svg",
+  },
+  {
+    title: "Cloud Computing Services",
+    desc: "Use the internet to improve your business.",
+    img: "https://metalogic.com.np/services/cloud.svg",
+  },
+  {
+    title: "Quality Assurance and Testing",
+    desc: "Checking software for reliability.",
+    img: "https://metalogic.com.np/services/qa.svg",
+  },
+  {
+    title: "UI/UX Designing",
+    desc: "Creating user-friendly interfaces.",
+    img: "https://metalogic.com.np/services/ui.svg",
+  },
+  {
+    title: "Maintenance and Support",
+    desc: "Keep your software running smoothly.",
+    img: "https://metalogic.com.np/services/mainpage/computer.svg",
+  },
+  {
+    title: "Blockchain Solutions",
+    desc: "Secure technology for your business.",
+    img: "https://metalogic.com.np/services/support.svg",
+  },
+  {
+    title: "DevOps",
+    desc: "Faster and safer software delivery.",
+    img: "https://metalogic.com.np/services/mainpage/computer.svg",
+  },
+];
+
 function App() {
   const [certainListOpen, setCertainListOpen] = useState(false);
 
@@ -71,249 +123,20 @@ function App() {
             </a>
 
             <div className="bg-blue-500 absolute top-1/10 left-0 right-0">
-              {/* <div className="flex justify-between px-3">
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-between px-3">
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-between px-3">
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div>image</div>
-                  <div>
-                    <h1>Custom Software development</h1>
-                    <p>ijhksdgnkjfhdfksgkjhdsfgjkbdh</p>
-                  </div>
-                </div>
-              </div> */}
+             
               {/* //service list in Big Screen */}
               {openBigScreenCertainList && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-2 py-4 text-white">
-                  <div className="flex items-center bg-red-500 px-2 gap-2 ">
-                    <img
-                      src="https://metalogic.com.np/services/mainpage/computer.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
+                  {
+                    services.map((service, index) => (
+                      <DesktopCardComponent key={index} service={service} />
+                    )) 
 
-                    <nav>
-                      <a href="">
-                        <h1 className="text-xl font-medium  ">
-                          Custom Software Development
-                        </h1>
-                        <p className="text-md font-light">
-                          Tailored software solutions for your needs.
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="flex items-center bg-red-500 gap-2">
-                    <img
-                      src="https://metalogic.com.np/services/web.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
 
-                    <nav>
-                      <a href="">
-                        <h1 className="text-xl font-medium ">
-                          Web Development
-                        </h1>
-                        <p className="text-md font-light">
-                          Websites that work on all devices
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
+                  }
 
-                  <div className="flex items-center bg-red-500   gap-2">
-                    <img
-                      src="https://metalogic.com.np/services/mobile.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#" rel="noopener noreferrer">
-                        <h1 className="text-xl font-medium">
-                          Mobile App Devlopment
-                        </h1>
-                        <p className="text-md font-light">
-                          App for phones and tables
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-
-                  <div className="flex items-center bg-red-500 px-2  gap-2 ">
-                    <img
-                      src="https://metalogic.com.np/services/cloud.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="text-xl font-medium">
-                          Cloud computing services
-                        </h1>
-                        <p className="text-md font-light">
-                          Use the internet to impove your business
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="flex items-center bg-red-500 gap-2 ">
-                    <img
-                      src="https://metalogic.com.np/services/qa.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="text-xl font-medium">
-                          Quality Aussurance and testing
-                        </h1>
-                        <p className="text-md font-light">
-                          Chceking softwares for relaibail;ity
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-
-                  <div className="flex items-center bg-red-500 gap-2  ">
-                    <img
-                      src="https://metalogic.com.np/services/ui.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="text-xl font-medium">UI/UX Designing</h1>
-                        <p className="text-md font-light">
-                          Creating user friendly interfaces
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-
-                  <div className="flex items-center bg-red-500 px-2 gap-2">
-                    <img
-                      src="https://metalogic.com.np/services/mainpage/computer.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="text-xl font-medium">
-                          Maintance and support
-                        </h1>
-                        <p className="text-md font-light">
-                          Keep your softwares running smoothly
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-
-                  <div className="flex items-center bg-red-500 gap-2 ">
-                    <img
-                      src="https://metalogic.com.np/services/support.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="">Block chain solutions</h1>
-                        <p className="text-md font-light">
-                          Secure your technology for your business
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
-
-                  <div className="flex items-center bg-red-500 gap-2">
-                    <img
-                      src="https://metalogic.com.np/services/mainpage/computer.svg"
-                      alt=""
-                      srcSet=""
-                      className="w-14"
-                    />
-
-                    <nav>
-                      <a href="#">
-                        <h1 className="text-xl font-medium">Dev Ops</h1>
-                        <p className="text-md font-light">
-                          Faster and safer software delivery
-                        </p>
-                      </a>
-                    </nav>
-                  </div>
+                    
+               
 
                   {/* <div className="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full">
                     <div>
