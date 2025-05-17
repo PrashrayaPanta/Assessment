@@ -15,7 +15,7 @@ const DesktopCardComponent: React.FC<DesktopCardComponentProps> = ({ service, in
   const shouldHavePadding = index === 0 || index === 3 || index === 6;
 
   return (
-    <div className={`flex items-center gap-3 bg-red-500 ${shouldHavePadding ? "px-2" : ""}`}>
+    <div className={`flex items-center gap-3 bg-red-500 ${shouldHavePadding ? "px-2" : ""}`} >
       <img src={service.img} alt={service.title} className="w-14" />
       
       <nav>

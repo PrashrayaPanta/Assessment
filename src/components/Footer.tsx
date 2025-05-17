@@ -1,5 +1,14 @@
+import React, { useState } from "react";
 
 const Footer = () => {
+
+
+  const [email, setEmail] = useState("");
+
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
   return (
     <>
       <footer
@@ -34,8 +43,10 @@ const Footer = () => {
                 <form className="flex gap-2 text-sm">
                   <input
                     type="email"
-                    placeholder="Email Address"
-                    className="flex-1 px-4 py-2 bg-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A00201]"
+                    value={email}
+                    className=" border invalid:border-red-900  focus:border-sky-500 focus:outline focus:outline-blue-500 focus:invalid:border-pink-500 focus:invalid:outline-red-900 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20"
+                    placeholder="Enter your email"
+                    onChange={handleChange}
                   />
                   <button
                     type="submit"

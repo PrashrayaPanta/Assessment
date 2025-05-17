@@ -123,7 +123,7 @@ function App() {
               </svg>
             </a>
 
-            <div className=" absolute top-1/10 left-0 right-0">
+            <div className="absolute top-1/10 left-0 right-0">
               {/* //service list in Big Screen */}
               {openBigScreenCertainList && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-2 py-4 text-white">
